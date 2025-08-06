@@ -1,0 +1,20 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+:where(main) {
+  :link{
+    color: var(--hex-link);
+    text-decoration: none;
+  }
+
+  :visited {
+    color: var(--hex-link);
+  }
+
+  :active {
+    color: var(--hex-link);
+  }
+}
