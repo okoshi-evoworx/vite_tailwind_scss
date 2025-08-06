@@ -51,13 +51,12 @@ npm run fix
 ├─ src/
 │   ├─ css/
 │   │   ├─ foundation/
-│   │   │   ├─ base/：html, bodyなどのスタイル
 │   │   │   ├─ mixin/：SCSSの@mixin, @function
 │   │   │   └─ variable/：CSS変数
 │   │   ├─ layout/：レイアウト（共通ヘッダー・フッターなど）
 │   │   ├─ object/
 │   │   │  ├─ component/：UIコンポーネント（再利用可能な最小単位）
-│   │   │  └─ project/：コンポーネントの組み合わせ（ページ単位のパーツ）
+│   │   │  └─ page/：コンポーネントの組み合わせ（ページ単位のパーツ）
 │   │   ├─ layout/：レイアウト（共通ヘッダー・フッターなど）
 │   │   ├─ styles.scss
 │   │   └─ tailwind.css ※拡張子注意
@@ -70,8 +69,6 @@ npm run fix
 ├─ .gitignore
 ├─ .markuplintrc
 ├─ .node-version
-├─ .prettierignore
-├─ .prettierrc
 ├─ .stylelintignore
 ├─ .stylelintrc.cjs
 ├─ biome.json
