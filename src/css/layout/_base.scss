@@ -19,8 +19,4 @@ body {
   :visited {
     color: var(--hex-link, VisitedText);
   }
-
-  :active {
-    color: var(--hex-link, ActiveText);
-  }
 }
