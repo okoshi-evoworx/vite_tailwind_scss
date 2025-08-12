@@ -1,20 +1,26 @@
+// 参考：System colors
+// https://developer.mozilla.org/ja/docs/Web/CSS/system-color
+
 body {
   width: 100%;
   min-height: 100vh;
   line-height: 1.5;
+  color-scheme: light dark;
+  background-color: Canvas;
+  color: CanvasText; // カラー
 }
 
 :where(main) {
   :link{
-    color: var(--hex-link);
+    color: var(--hex-link, LinkText);
     text-decoration: none;
   }
 
   :visited {
-    color: var(--hex-link);
+    color: var(--hex-link, VisitedText);
   }
 
   :active {
-    color: var(--hex-link);
+    color: var(--hex-link, ActiveText);
   }
 }

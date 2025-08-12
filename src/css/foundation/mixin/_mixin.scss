@@ -88,6 +88,46 @@
   }
 }
 
+@mixin landcape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+// Motion
+// ==================================================
+@mixin reduce {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+@mixin not_reduce {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
+
+// Color Scheme
+// ==================================================
+@mixin dark {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+@mixin light {
+  @media (prefers-color-scheme: light) {
+    @content;
+  }
+}
+
 // Screen reader only/Visually hidden
 // ==================================================
 @mixin sr-only {
