@@ -37,6 +37,12 @@ npm run fix
 | `npm run fix:js` | `biome check --write src/js/**/*.js` | js修正(lint/format/import) |
 | `npm run fix:css` | `stylelint src/css/**/*.{css,scss}` | css修正 |
 
+### test：@axe-core/playwrightによるアクセシビリティチェック
+`npm run build`実行後に
+```
+npm run test
+```
+
 ## Directory
 ```
 ├─ dist/
@@ -65,6 +71,8 @@ npm run fix
 │   │   ├─ modules/
 │   │   └─ main.js
 │   └─ img/
+├─ tests/
+│   └─ axe.spec.js：@axe-core/playwright設定ファイル
 ├─ .browserslistrc
 ├─ .editorconfig
 ├─ .gitignore
@@ -76,6 +84,7 @@ npm run fix
 ├─ index.html
 ├─ package-lock.json
 ├─ package.json
+├─ playwright.config.js
 ├─ README.md
 └─ vite.config.js
 ```
@@ -100,7 +109,7 @@ npm run fix
 | landscape: | @mixin landscape {} |  @media (orientation: landscape) {} |
 | portrait: | @mixin portrait {} |  @media (orientation: portrait) {} |
 | motion-reduce: | @mixin reduce {} |  @media (prefers-reduced-motion: reduce) {} |
-|                | @mixin not_reduce {} |  @media (prefers-reduced-motion: no-preference) {} |
+|                | @mixin not_reduce {} |  @media (prefers-reduced-motion: no-preferene) {} |
 | dark: | @mixin dark {} |  @media (prefers-color-scheme: dark) {} |
 |       | @mixin light {} |  @media (prefers-color-scheme: light) {} |
 
