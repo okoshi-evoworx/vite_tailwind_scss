@@ -1,5 +1,7 @@
 // Accessibility testing
 // https://playwright.dev/docs/accessibility-testing
+// @axe-core/playwright によるアクセシビリティテストの自動化
+// https://azukiazusa.dev/blog/axe-core-playwright/
 import { test, expect } from "@playwright/test";
 import { AxeBuilder } from "@axe-core/playwright";
 

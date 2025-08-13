@@ -92,13 +92,13 @@ npm run test
 ## Breakpoint
 | tailwind | scss | css |
 |:--- | :---   | :--- |
-|     | @mixin _sm {} |  @media (width < 400px) {} |
+|     | @mixin under_sm {} |  @media (width < 400px) {} |
 | sm: | @mixin sm {} |  @media (width >= 400px) {} |
-|     | @mixin _md {} |  @media (width < 800px) {} |
+|     | @mixin under_md {} |  @media (width < 800px) {} |
 | md: | @mixin md {} |  @media (width >= 800px) {} |
-|     | @mixin _lg {} |  @media (width < 1200px) {} |
+|     | @mixin under_lg {} |  @media (width < 1200px) {} |
 | lg: | @mixin lg {} |  @media (width >= 1200px) {} |
-|     | @mixin _xl {} |  @media (width < 1600px) {} |
+|     | @mixin under_xl {} |  @media (width < 1600px) {} |
 | xl: | @mixin xl {} |  @media (width >= 1600px) {} |
 |     | @mixin sm_md {} |  @media (400px <= width > 800px) {} |
 |     | @mixin sm_lg {} |  @media (400px <= width > 1200px) {} |

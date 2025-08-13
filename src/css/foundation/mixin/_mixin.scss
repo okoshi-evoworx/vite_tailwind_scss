@@ -4,7 +4,7 @@
 
 // @mediaquery
 // ==================================================
-@mixin _sm {
+@mixin under_sm {
   @media (width < 400px) {
     @content;
   }
@@ -16,7 +16,7 @@
   }
 }
 
-@mixin _md {
+@mixin under_md {
   @media (width < 800px) {
     @content;
   }
@@ -28,7 +28,7 @@
   }
 }
 
-@mixin _lg {
+@mixin under_lg {
   @media (width < 1200px) {
     @content;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-@mixin _xl {
+@mixin under_xl {
   @media (width < 1600px) {
     @content;
   }
