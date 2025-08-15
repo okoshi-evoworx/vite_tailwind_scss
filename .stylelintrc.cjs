@@ -7,6 +7,8 @@ module.exports = {
     'no-descending-specificity': null,
     'custom-property-pattern': null,
     'selector-class-pattern': null,
+    'function-name-case': null,
+    'keyframes-name-pattern': null,
     'scss/at-rule-no-unknown': [
       true,
       {
