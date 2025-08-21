@@ -67,7 +67,7 @@ export default defineConfig({
         },
         transformer: 'lightningcss',
         lightningcss: {
-            targets: browserslistToTargets(browserslist('> 0.5% in JP, last 2 versions, FF ESR, not dead'))
+            targets: browserslistToTargets(browserslist())// extend browserslist-config-baseline
         }
     },
     build: {
