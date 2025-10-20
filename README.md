@@ -1,6 +1,12 @@
 # Vite-Tailwind-SCSS/biome-prettier-stylelint
 
 ## Command
+### 各ツールのバージョン確認
+```
+npx npm-check-updates
+```
+※`package.json`への適用は `npx npm-check-updates -u`
+
 ### init：初期設定
 ```
 npm i
